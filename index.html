@@ -1,161 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRADING WITH KAROL ( SEBI REGISTRARED)</title>
 
-<title>Trading Community</title>
+    <!-- ========================================== -->
+    <!-- 1. META PIXEL & TRACKING CODE (START) -->
+    <!-- ========================================== -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // Facebook Pixel ID
+      fbq('init', '1575637863863434'); 
+      
+      // PageView Event
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=1575637863863434&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- ========================================== -->
+    <!-- META PIXEL CODE (END) -->
+    <!-- ========================================== -->
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
 
-fbq('init', '2027397264819185');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
+        body {
+            background-color: #03080e;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
 
-<style>
-body{
-margin:0;
-font-family:Arial;
-text-align:center;
-color:white;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-}
+        /* Outer Glow Border Container */
+        .card-container {
+            width: 100%;
+            max-width: 420px;
+            background-color: #050c14;
+            border: 2px solid #00b4d8;
+            border-radius: 36px;
+            padding: 35px 20px 25px 20px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(0, 180, 216, 0.4), inset 0 0 15px rgba(0, 180, 216, 0.2);
+            position: relative;
+        }
 
-/* TOP BAR */
-.topbar{
-background:#ffd700;
-color:#000;
-padding:12px;
-font-weight:900;
-font-size:17px;
-}
+        /* Profile Image Header with Cyan Glow */
+        .profile-sec {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
 
-/* PROFILE */
-.profile{
-margin-top:25px;
-}
-.profile img{
-width:130px;
-height:130px;
-border-radius:50%;
-border:5px solid #ffd700;
-}
+        .profile-box {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid #00d2ff;
+            overflow: hidden;
+            box-shadow: 0 0 25px #00d2ff, 0 0 10px #00d2ff;
+            background-color: #000;
+        }
 
-/* TEXT */
-.title{
-font-size:24px;
-font-weight:900;
-margin-top:10px;
-color:#ffd700;
-}
-.subtitle{
-font-size:16px;
-font-weight:700;
-}
-.counter{
-margin-top:8px;
-font-weight:700;
-}
+        .profile-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-/* BOX */
-.box{
-background:rgba(0,0,0,0.4);
-margin:12px 20px;
-padding:12px;
-border-radius:10px;
-font-weight:700;
-}
+        /* Main Name Header */
+        .main-name {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 2.5px;
+            margin-bottom: 30px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
 
-/* BUTTON */
-.join-btn{
-background:#ffd700;
-color:#000;
-padding:16px;
-margin:20px;
-border-radius:12px;
-font-size:18px;
-font-weight:900;
-cursor:pointer;
-animation:pulse 1.5s infinite;
-}
+        /* Feature List Styling */
+        .feature-list {
+            list-style: none;
+            margin-bottom: 30px;
+            text-align: left;
+            padding: 0 10px;
+        }
 
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.05)}
-100%{transform:scale(1)}
-}
+        .feature-list li {
+            font-size: 16px;
+            color: #d1d5db;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-weight: 500;
+        }
 
-/* ADS */
-.ads{
-margin:20px 0;
-}
-.ads a{
-background:black;
-color:#ffd700;
-padding:10px 18px;
-border-radius:20px;
-text-decoration:none;
-font-size:13px;
-}
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
 
-/* DISCLAIMER */
-.disclaimer{
-background:#000;
-color:#ccc;
-font-size:12px;
-padding:14px;
-line-height:1.6;
-}
-</style>
+        .feature-list .icon {
+            font-size: 20px;
+            width: 25px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        /* Community Text */
+        .sub-desc {
+            font-size: 15px;
+            color: #9ca3af;
+            line-height: 1.4;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        /* Gradient Telegram Button */
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background: linear-gradient(90deg, #00b4d8 0%, #805ad5 100%);
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 800;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 50px;
+            box-shadow: 0 0 20px rgba(128, 90, 213, 0.5);
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .join-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Hindi Quote */
+        .quote-text {
+            font-size: 16px;
+            color: #e5e7eb;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        /* Advertising Badge Outer Box */
+        .ad-badge {
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            padding: 12px;
+            font-size: 13px;
+            color: #9ca3af;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.01);
+            font-weight: 500;
+        }
+
+        /* Clickable Agency Link Styling */
+        .ad-badge .agency-link {
+            color: #00b4d8;
+            font-weight: 700;
+            text-decoration: none;
+            transition: color 0.2s, text-decoration 0.2s;
+        }
+
+        .ad-badge .agency-link:hover {
+            color: #805ad5;
+            text-decoration: underline;
+        }
+
+        /* Footer Copyright & Links */
+        .footer-links {
+            font-size: 12px;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="profile">
-<img src="profile.jpg" alt="Profile">
+    <div class="card-container">
+        
+        <!-- Profile Image -->
+        <div class="profile-sec">
+            <div class="profile-box">
+                <img src="profile.png" alt="Profile Image">
+            </div>
+        </div>
+
+        <!-- Name Title -->
+        <div class="main-name">TRADE WITH GAUTAM JHA
 </div>
 
-<div class="title">Trade With Mohit Agrawal</div>
-<div class="subtitle">Market Insights & Learning</div>
-<div class="counter">👥 2,300+ traders joined today</div>
+        <!-- Point List -->
+        <ul class="feature-list">
+            <li><span class="icon">🌐</span> Learning & Educational Sessions</li>
+            <li><span class="icon">📊</span> Market Concepts & Awareness</li>
+            <li><span class="icon">💎</span> Chart Reading Concepts</li>
+            <li><span class="icon">💻</span> Educational Case Discussions</li>
+        </ul>
 
-<div class="box">📊 Market Analysis & Learning</div>
-<div class="box">📈 Intraday & Options Discussion</div>
-<div class="box">📚 14+ Years Market Experience</div>
+        <!-- Description -->
+        <div class="sub-desc">
+            Join our learning community and grow your knowledge
+        </div>
 
-<div class="join-btn" id="joinBtn">JOIN TELEGRAM CHANNEL</div>
+        <!-- Telegram Button (javascript se click handle ho rha h) -->
+        <a id="telegramLink" href="javascript:void(0);" class="join-btn" onclick="trackButtonClick()">
+            JOIN TELEGRAM
+        </a>
 
-<div class="ads">
-<a href="https://t.me/+GZeKfXdd9lIxZTJl">Advertised by elitemarketing.tech</a>
-</div>
+        <!-- Hindi Quote -->
+        <div class="quote-text">
+            नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।
+        </div>
 
-<script>
-const tgLink="https://t.me/+FbqZCLER6y4zYTBl";
+        <!-- Agency Tag with Clickable Link -->
+        <div class="ad-badge">
+            This Channel Advertise By <a href="https://t.me/+mp524qElHEQ2YWU1" target="_blank" class="agency-link">elite marketing AGENCY</a>
+        </div>
 
-document.getElementById("joinBtn").addEventListener("click",function(){
-fbq('track','Lead',{ value:10, currency:'INR' });
-window.location.href = tgLink;
-});
-</script>
+        <!-- Footer Policy -->
+        <div class="footer-links">
+            Terms | Privacy | Disclaimer<br>
+            This site is not part of Facebook™ or endorsed by Facebook™.
+        </div>
 
-<div class="disclaimer">
-<strong>Disclaimer:</strong><br>
-This community is for educational and informational purposes only.
-We do not provide financial or investment advice.
-Trading in financial markets involves risk.
-Always consult a qualified financial advisor before making any investment decisions.
-</div>
+    </div>
+
+    <!-- JavaScript - Single Click Prevention & Tracking -->
+    <script>
+        var isClicked = false; // ट्रैक करने के लिए फ़्लैग वेरिएबल
+        var telegramUrl = "https://t.me/+Iz2_Lb3pJbMxNzM1"; // आपकी पहली वाली लिंक
+
+        function trackButtonClick() {
+            // अगर यूजर पहली बार क्लिक कर रहा है
+            if (!isClicked) {
+                isClicked = true; // क्लिक दर्ज हो गया, अब यह बदल नहीं सकता
+
+                // 1. Facebook Pixel Events Fire होंगे
+                if (typeof fbq !== 'undefined') {
+                    fbq('trackCustom', 'TelegramBtnClick'); 
+                    fbq('track', 'Subscribe'); 
+                }
+
+                // 2. बटन को विजुअली डिसेबल कर दें (ताकि यूजर को पता चले क्लिक हो चुका है)
+                var btn = document.getElementById('telegramLink');
+                if (btn) {
+                    btn.style.pointerEvents = 'none'; // अतिरिक्त क्लिक पूरी तरह ब्लॉक
+                    btn.style.opacity = '0.7';       // हल्का धुंधला इफेक्ट
+                }
+
+                // 3. 300ms के बाद Telegram पर रीडायरेक्ट करें
+                setTimeout(function() {
+                    window.location.href = telegramUrl;
+                }, 300);
+            }
+            // अगर पहले से क्लिक हो चुका है, तो कुछ भी नहीं होगा
+        }
+    </script>
 
 </body>
 </html>
